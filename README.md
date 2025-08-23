@@ -20,7 +20,7 @@ Simply open the website in your browser. All content is public and accessible.
 
 ## Contact
 
-Feel free to reach out via the contact form on the site or email me at [your-email@example.com].
+Feel free to reach out via the contact form on the site or email me at [bhuvanachandhiran.dev@gmail.com].
 
 ---
 
