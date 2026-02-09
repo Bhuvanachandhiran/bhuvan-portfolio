@@ -18,12 +18,24 @@ export default function Hero() {
         transition={{ delay: 0.4, duration: 0.7 }}
         className="mt-4 text-xl md:text-2xl text-brand-orange"
       >
-        AI/ML Engineer • Web Developer
+        AI/ML Engineer | Generative AI • Deep Learning • Applied Machine Learning
       </motion.p>
 
       <div className="mt-8 flex gap-4">
-        <a href="/BhuvanachandhiranResume.pdf" download className="btn">Download Resume</a>
-        <a href="#projects" className="btn bg-gray-800 text-white hover:opacity-90">View Projects</a>
+        <a
+          href="/Bhuvanachandhiran_AI_ML_Engineer_Chennai.docx"
+          download
+          className="btn"
+        >
+          Download Resume
+        </a>
+
+        <a
+          href="#projects"
+          className="btn bg-gray-800 text-white hover:opacity-90"
+        >
+          View Projects
+        </a>
       </div>
     </header>
   );
