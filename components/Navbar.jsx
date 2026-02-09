@@ -13,18 +13,31 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 ${scrolled ? 'bg-white/70 dark:bg-gray-900/70 backdrop-blur shadow' : 'bg-transparent'} transition`}>
+    <nav className={`fixed w-full z-50 ${
+      scrolled
+        ? 'bg-white/70 dark:bg-gray-900/70 backdrop-blur shadow'
+        : 'bg-transparent'
+    } transition`}
+    >
       <div className="container flex items-center justify-between py-4">
         <a href="#" className="text-xl font-bold text-brand-orange">Bhuvan</a>
+
         <div className="hidden md:flex items-center gap-8">
           <a href="#about" className="hover:text-brand-primary">About</a>
-          <a href="#services" className="hover:text-brand-primary">Services</a>
+          <a href="#skills" className="hover:text-brand-primary">Skills</a>
           <a href="#projects" className="hover:text-brand-primary">Projects</a>
           <a href="#contact" className="hover:text-brand-primary">Contact</a>
         </div>
+
         <div className="flex items-center gap-4">
           <DarkModeToggle />
-          <button className="md:hidden text-2xl" onClick={() => setIsOpen(v => !v)} aria-label="Toggle Menu">☰</button>
+          <button
+            className="md:hidden text-2xl"
+            onClick={() => setIsOpen(v => !v)}
+            aria-label="Toggle Menu"
+          >
+            ☰
+          </button>
         </div>
       </div>
 
@@ -35,7 +48,7 @@ export default function Navbar() {
           className="md:hidden bg-slate-100 dark:bg-slate-800 px-6 py-4"
         >
           <a href="#about" className="block py-2" onClick={() => setIsOpen(false)}>About</a>
-          <a href="#services" className="block py-2" onClick={() => setIsOpen(false)}>Services</a>
+          <a href="#skills" className="block py-2" onClick={() => setIsOpen(false)}>Skills</a>
           <a href="#projects" className="block py-2" onClick={() => setIsOpen(false)}>Projects</a>
           <a href="#contact" className="block py-2" onClick={() => setIsOpen(false)}>Contact</a>
         </motion.div>
